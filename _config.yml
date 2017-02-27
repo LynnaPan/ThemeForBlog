@@ -21,21 +21,26 @@ widgets:
 
 #### RSS
 rss:  atom.xml ## RSS address.
-
+root: /
 #### Image
 imglogo:
   enable: false             ## display image logo true/false.
-  src: img/logo.svg        ## `.svg` and `.png` are recommended,please put image into the theme folder `/coney/source/img`.
-favicon: img/favicon.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/coney/source/img`.     
+  src:         ## `.svg` and `.png` are recommended,please put image into the theme folder `/coney/source/img`.
+favicon:    ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/coney/source/img`.     
 
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
 #### Author Avatar Picture
 author_img_enable: true ## display author avatar picture
 dataURI: false
 ## if the picture's format is dataURI please set the value to true,otherwise set the value to false.
 ## convert an image into base 64 data URIs http://websemantics.co.uk/online_tools/image_to_data_uri_convertor/ .
-author_img_data: ''
+author_img_data: 'img/tuanzi.jpg'
 ## paste the dataURI in ONE LINE and included it by ''.
-author_img: img/coney.png ## size:220px*220px.
+author_img: 'img/tuanzi.jpg' ## size:220px*220px.
 ## if the picture's format is `.png` or `.jpg`  instead of dataURI,you should set the `dataURI` value to false.
 
 #### Font
@@ -58,9 +63,9 @@ fancybox: false
 #### Author information
 author:
   google_plus:    ## eg:116338260303228776998 for https://plus.google.com/u/0/116338260303228776998
-  weibo:      ## e.g. 436062867 for http://weibo.com/436062867
+  weibo:      1912518851 ## e.g. 436062867 for http://weibo.com/436062867
   twitter:    ## e.g. gengbiaosky for https://twitter.com/yangjiansky
-  github:     ## e.g. coneycode for https://github.com/coneycode
+  github:     LynnaPan ## e.g. coneycode for https://github.com/coneycode
   facebook:   ## e.g. gengbiao for https://favebook.com/yangjian
   tsina:      ## e.g. 1664838973  Your weibo ID,It will be used in share button.
   zhihu:     # coneylife, now it is no icon, I have push an issue to Font Awesome.
@@ -89,13 +94,13 @@ baidu_share:
 theme_color:
     background: "#dddddd"
     font: "#817c7c"
-    theme: '#ea6753'
+    theme: '#0071C5'
     footer: "#ddd"
  ####Baidu search 
 baidu_search:
   enable: true
   id: 
-  site: http://zhannei.baidu.com/cse/search  #your can change your site instead the default site
+  site: https://lynnapan.github.io/  #your can change your site instead the default site
 
 google_analytics:
   enable: true
